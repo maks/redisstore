@@ -1,0 +1,48 @@
+
+h1. Redisstore
+
+Redisstore is a Javascript client for the "Redis":http://code.google.com/p/redis/ key-value database for RingoJS.
+
+It uses "jredis":http://code.google.com/p/jredis/ Java Redis client library.
+
+
+h1. Installation
+
+Run the following command with a recent git version of RingoJS:
+
+@ringo-admin install ngv/redisstore@ 
+
+h1. Usage
+
+Run ringo to start the Ringo shell.
+
+Connect to a server:
+
+@var redis = new require( "ringo/redis").connect();@
+
+Add a new key:
+
+@redis.set("mykey", "avalue");@
+
+Now get the key you just added:
+
+@redis.get("mykey", "avalue");@
+
+And to disconnect:
+
+client.close();
+
+
+
+h1. License
+
+Redisstore is distributed under the MIT license.
+
+Copyright (c) 2010 National Gallery of Victoria webmaster@ngv.vic.gov.au
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN 
+

@@ -1,0 +1,11 @@
+{
+    "name": "redisstore",
+    "version": "0.0.1",
+    "description": "Redis Storage implemention",
+    "keywords": ["database", "storage", "redis"],
+    "author": "NGV (http://ngv.vic.gov.au/) <webmaster@ngv.vic.gov.au>",
+    "jars": [
+        "jars/jredis-1.0-rc1.jar"
+    ]
+}
+
